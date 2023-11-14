@@ -142,7 +142,7 @@ module.exports = () => {
         '!viewportSemanticTokens'
       ],
       languages: [],
-      filename: '[name]-[hash].worker.js'
+      filename: '[name]-[fullhash].worker.js'
     })
   ]
 

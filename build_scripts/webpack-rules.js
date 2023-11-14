@@ -51,7 +51,7 @@ module.exports = [
   {
     test: /\.(png|gif|jpg|svg)$/,
     include: [path.resolve(helpers.browserPath, 'modules')],
-    use: 'file-loader?limit=20480&name=assets/[name]-[hash].[ext]'
+    use: 'file-loader?limit=20480&name=assets/[name]-[contenthash].[ext]'
   },
   {
     test: /\.woff$/,
@@ -79,8 +79,9 @@ module.exports = [
         options: {
           modules: true,
           importLoaders: 1,
-          camelCase: true,
-          localIdentName: '[local]'
+          modules: {
+            localIdentName: '[local]'
+          }
         }
       },
       'postcss-loader'
@@ -100,8 +101,9 @@ module.exports = [
         options: {
           modules: true,
           importLoaders: 1,
-          camelCase: 1,
-          localIdentName: '[name]__[local]___[hash:base64:5]'
+          modules: {
+            localIdentName: '[name]__[local]___[contenthash:base64:5]'
+          }
         }
       },
       'postcss-loader'
@@ -135,7 +137,7 @@ module.exports = [
       {
         loader: 'worker-loader',
         options: {
-          name: 'bolt-worker-[hash].js'
+          filename: 'bolt-worker-[contenthash].js'
         }
       },
       {

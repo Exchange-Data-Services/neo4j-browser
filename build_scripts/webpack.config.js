@@ -33,8 +33,8 @@ module.exports = {
     filename: 'app-[contenthash].js',
     chunkFilename: '[name]-[contenthash].bundle.js',
     publicPath: '',
-    path: helpers.buildPath,
-    globalObject: 'this'
+    path: helpers.buildPath
+    //globalObject: 'this'
   },
   plugins: getPlugins(),
   resolve: {
@@ -100,12 +100,16 @@ module.exports = {
     : {
         removeAvailableModules: false,
         removeEmptyChunks: false,
-        splitChunks: false
+        splitChunks: false,
+        runtimeChunk: 'single'
       },
   devtool: helpers.isProduction ? false : 'eval-cheap-module-source-map',
   devServer: {
     host: '0.0.0.0',
     port: 8080,
-    allowedHosts: ['localhost']
+    allowedHosts: ['localhost'],
+    headers: {
+      'Access-Control-Allow-Origin': '*'
+    }
   }
 }

@@ -17,7 +17,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-
+const { ModuleFederationPlugin } = require('webpack').container
 const helpers = require('./webpack-helpers')
 const webpack = require('webpack')
 const path = require('path')
@@ -32,7 +32,7 @@ const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
 const MonacoWebpackPlugin = require('monaco-editor-webpack-plugin')
 const manifestGeneration = require('./generate-manifest-helpers')
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin')
-
+const deps = require('../package.json').dependencies
 const builtAt = new Date().toISOString()
 const buildNumber = process.env.BUILD_NUMBER
 const gitHash = process.env.GIT_HASH
@@ -143,6 +143,23 @@ module.exports = () => {
       ],
       languages: [],
       filename: '[name]-[fullhash].worker.js'
+    }),
+    new ModuleFederationPlugin({
+      name: 'neo4j_browser',
+      filename: 'remoteEntry.js',
+      exposes: {
+        './SimpleComponent': './src/browser/SimpleComponent'
+      }
+      //  shared: {
+      //     react: {
+      //       singleton: true,
+      //       requiredVersion: deps.react,
+      //     },
+      //     'react-dom': {
+      //       singleton: true,
+      //       requiredVersion: deps['react-dom'],
+      //     },
+      //   },
     })
   ]
 

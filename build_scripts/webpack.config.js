@@ -32,7 +32,7 @@ module.exports = {
   output: {
     filename: 'app-[contenthash].js',
     chunkFilename: '[name]-[contenthash].bundle.js',
-    publicPath: '',
+    publicPath: 'auto',
     path: helpers.buildPath
     //globalObject: 'this'
   },
@@ -100,16 +100,25 @@ module.exports = {
     : {
         removeAvailableModules: false,
         removeEmptyChunks: false,
-        splitChunks: false,
-        runtimeChunk: 'single'
+        splitChunks: false
       },
   devtool: helpers.isProduction ? false : 'eval-cheap-module-source-map',
   devServer: {
     host: '0.0.0.0',
     port: 8080,
-    allowedHosts: ['localhost'],
     headers: {
       'Access-Control-Allow-Origin': '*'
+    },
+    hot: true,
+    onBeforeSetupMiddleware: function (devServer) {
+      if (!devServer.app) {
+        throw new Error('webpack-dev-server is not defined')
+      }
+      devServer.app.use('/bolt-worker*', function (req, res, next) {
+        debugger
+        res.set('Access-Control-Allow-Origin', '*')
+        next()
+      })
     }
   }
 }

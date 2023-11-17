@@ -21,7 +21,7 @@
   "homepage": "https://neo4j.com/developer/guide-neo4j-browser/",
   "main": "dist/index.html",
   "scripts": {
-    "build": "cross-env NODE_ENV=\"production\" webpack --config ./build_scripts/webpack.config.js",
+    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider NODE_ENV=development webpack --config ./build_scripts/webpack.config.js",
     "dev": "jest --watch",
     "e2e": "cypress run",
     "e2e-open": "cypress open",
@@ -220,7 +220,7 @@
     "react-suber": "1.0.4",
     "react-svg-inline": "^2.1.1",
     "react-table": "7.0.4",
-    "react-timeago": "^4.1.9",
+    "react-timeago": "7.0.0",
     "redux": "^3.7.2",
     "redux-observable": "^0.16.0",
     "regenerator-runtime": "^0.13.2",

@@ -226,6 +226,7 @@ export function MainEditor({
 
   function createRunCommandFunction(source: string) {
     return () => {
+      debugger
       executeCommand(editorRef.current?.getValue() || '', source)
       editorRef.current?.setValue('')
       setCurrentlyEditing(null)

@@ -123,7 +123,6 @@ export const handleBoltWorkerMessage =
   (postMessage: (msg: any, options?: any) => void) =>
   ({ data }: WorkerMessage) => {
     const messageType = data.type
-
     if (messageType === RUN_CYPHER_MESSAGE) {
       runningCypherQuery = true
       runCypherMessage(data, postMessage)

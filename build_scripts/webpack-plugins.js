@@ -142,13 +142,13 @@ module.exports = () => {
         '!viewportSemanticTokens'
       ],
       languages: [],
-      filename: '[name]-[fullhash].worker.js'
+      filename: '[name]-[contenthash].worker.js'
     }),
     new ModuleFederationPlugin({
       name: 'neo4j_browser',
       filename: 'remoteEntry.js',
       exposes: {
-        './SimpleComponent': './src/browser/SimpleComponent'
+        './AppInit': './src/browser/AppInit'
       }
       //  shared: {
       //     react: {

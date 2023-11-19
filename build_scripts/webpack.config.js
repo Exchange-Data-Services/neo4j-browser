@@ -104,21 +104,8 @@ module.exports = {
       },
   devtool: helpers.isProduction ? false : 'eval-cheap-module-source-map',
   devServer: {
-    host: '0.0.0.0',
+    host: '127.0.0.1',
     port: 8080,
-    headers: {
-      'Access-Control-Allow-Origin': '*'
-    },
-    hot: true,
-    onBeforeSetupMiddleware: function (devServer) {
-      if (!devServer.app) {
-        throw new Error('webpack-dev-server is not defined')
-      }
-      devServer.app.use('/bolt-worker*', function (req, res, next) {
-        debugger
-        res.set('Access-Control-Allow-Origin', '*')
-        next()
-      })
-    }
+    hot: true
   }
 }

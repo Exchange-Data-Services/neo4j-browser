@@ -149,17 +149,17 @@ module.exports = () => {
       filename: 'remoteEntry.js',
       exposes: {
         './AppInit': './src/browser/AppInit'
+      },
+      shared: {
+        react: {
+          singleton: true,
+          requiredVersion: deps.react
+        },
+        'react-dom': {
+          singleton: true,
+          requiredVersion: deps['react-dom']
+        }
       }
-      //  shared: {
-      //     react: {
-      //       singleton: true,
-      //       requiredVersion: deps.react,
-      //     },
-      //     'react-dom': {
-      //       singleton: true,
-      //       requiredVersion: deps['react-dom'],
-      //     },
-      //   },
     })
   ]
 

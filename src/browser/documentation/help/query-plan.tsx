@@ -45,13 +45,13 @@ const content = (
     </div>
     <div className="details">
       <img
-        src="./assets/images/query-plan.svg"
+        src="./neo4j-browser/assets/images/query-plan.svg"
         className="img-responsive pull-right"
       />
     </div>
     <div className="details">
       <img
-        src="./assets/images/query-plan-operator-rows.svg"
+        src="./neo4j-browser/assets/images/query-plan-operator-rows.svg"
         className="img-responsive"
       />
     </div>
@@ -89,7 +89,7 @@ const content = (
     </div>
     <div className="details">
       <img
-        src="./assets/images/query-plan-operator-cost.svg"
+        src="./neo4j-browser/assets/images/query-plan-operator-cost.svg"
         className="img-responsive"
       />
     </div>
@@ -118,7 +118,7 @@ const content = (
     </div>
     <div className="details">
       <img
-        src="./assets/images/query-plan-operator-details.svg"
+        src="./neo4j-browser/assets/images/query-plan-operator-details.svg"
         className="img-responsive"
       />
     </div>

@@ -68,7 +68,10 @@ const slides = [
       </ul>
     </div>
     <div className="col-sm-4">
-      <img src="./assets/images/one_node.png" className="img-responsive" />
+      <img
+        src="./neo4j-browser/assets/images/one_node.png"
+        className="img-responsive"
+      />
     </div>
   </Slide>,
   <Slide key="third">
@@ -91,7 +94,10 @@ const slides = [
       </ul>
     </div>
     <div className="col-sm-4">
-      <img src="./assets/images/labeled_node.png" className="img-responsive" />
+      <img
+        src="./neo4j-browser/assets/images/labeled_node.png"
+        className="img-responsive"
+      />
     </div>
   </Slide>,
   <Slide key="forth">
@@ -120,7 +126,10 @@ const slides = [
       </ul>
     </div>
     <div className="col-sm-4">
-      <img src="./assets/images/more_nodes.png" className="img-responsive" />
+      <img
+        src="./neo4j-browser/assets/images/more_nodes.png"
+        className="img-responsive"
+      />
     </div>
   </Slide>,
   <Slide key="fifth">
@@ -146,7 +155,10 @@ const slides = [
       </ul>
     </div>
     <div className="col-sm-4">
-      <img src="./assets/images/relationships.png" className="img-responsive" />
+      <img
+        src="./neo4j-browser/assets/images/relationships.png"
+        className="img-responsive"
+      />
     </div>
   </Slide>,
   <Slide key="sixth">
@@ -167,7 +179,10 @@ const slides = [
       </ul>
     </div>
     <div className="col-sm-4">
-      <img src="./assets/images/rel-props.png" className="img-responsive" />
+      <img
+        src="./neo4j-browser/assets/images/rel-props.png"
+        className="img-responsive"
+      />
     </div>
   </Slide>,
   <Slide key="seventh">

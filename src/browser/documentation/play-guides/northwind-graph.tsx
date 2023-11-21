@@ -63,7 +63,7 @@ const slides = [
       </p>
       <p>
         <img
-          src="./assets/images/northwind/product-category-supplier.png"
+          src="./neo4j-browser/assets/images/northwind/product-category-supplier.png"
           className="img-responsive"
         />
       </p>
@@ -132,7 +132,7 @@ SET n = row`}
       </p>
       <p>
         <img
-          src="./assets/images/northwind/product-graph.png"
+          src="./neo4j-browser/assets/images/northwind/product-graph.png"
           className="img-responsive"
         />
       </p>
@@ -186,7 +186,7 @@ CREATE (s)-[:SUPPLIES]->(p)`}
       <p>Lets try some queries using patterns.</p>
       <p>
         <img
-          src="./assets/images/northwind/product-graph.png"
+          src="./neo4j-browser/assets/images/northwind/product-graph.png"
           className="img-responsive"
         />
       </p>
@@ -222,7 +222,7 @@ RETURN DISTINCT s.companyName as ProduceSuppliers`}
       <p>
         Northwind customers place orders which may detail multiple products.
         <img
-          src="./assets/images/northwind/customer-orders.png"
+          src="./neo4j-browser/assets/images/northwind/customer-orders.png"
           className="img-responsive"
         />
       </p>
@@ -285,7 +285,7 @@ CREATE (c)-[:PURCHASED]->(o)`}
         Here, we'll directly promote each OrderDetail record into a relationship
         in the graph.
         <img
-          src="./assets/images/northwind/order-graph.png"
+          src="./neo4j-browser/assets/images/northwind/order-graph.png"
           className="img-responsive"
         />
       </p>

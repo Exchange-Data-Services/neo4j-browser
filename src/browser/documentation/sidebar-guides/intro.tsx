@@ -88,7 +88,10 @@ const slides = [
     </p>
     <br />
     <video autoPlay loop muted playsInline>
-      <source src="./assets/images/Keystrokes.mp4" type="video/mp4" />
+      <source
+        src="./neo4j-browser/assets/images/Keystrokes.mp4"
+        type="video/mp4"
+      />
     </video>
   </BuiltInGuideSidebarSlide>,
   <BuiltInGuideSidebarSlide key="s3">
@@ -116,7 +119,10 @@ const slides = [
       </li>
     </ul>
     <br />
-    <img src="./assets/images/Stream.png" className="img-responsive padding5" />
+    <img
+      src="./neo4j-browser/assets/images/Stream.png"
+      className="img-responsive padding5"
+    />
   </BuiltInGuideSidebarSlide>,
   <BuiltInGuideSidebarSlide key="s4">
     <h3>Reusable frame</h3>
@@ -134,7 +140,10 @@ const slides = [
     </p>
     <br />
     <video autoPlay loop muted playsInline>
-      <source src="./assets/images/ReusableFrame.mp4" type="video/mp4" />
+      <source
+        src="./neo4j-browser/assets/images/ReusableFrame.mp4"
+        type="video/mp4"
+      />
     </video>
   </BuiltInGuideSidebarSlide>,
   <BuiltInGuideSidebarSlide key="s5">
@@ -150,7 +159,7 @@ const slides = [
     prompt in the Editor.
     <br />
     <img
-      src="./assets/images/SidebarDB_Iinfo.png"
+      src="./neo4j-browser/assets/images/SidebarDB_Iinfo.png"
       className="img-responsive padding5"
     />
   </BuiltInGuideSidebarSlide>,
@@ -170,7 +179,10 @@ const slides = [
     </p>
     <br />
     <video autoPlay loop muted playsInline>
-      <source src="./assets/images/Favorites.mp4" type="video/mp4" />
+      <source
+        src="./neo4j-browser/assets/images/Favorites.mp4"
+        type="video/mp4"
+      />
     </video>
   </BuiltInGuideSidebarSlide>,
   <BuiltInGuideSidebarSlide key="s7">
@@ -189,7 +201,10 @@ const slides = [
     <p>The Project Files drawer is Neo4j Desktop specific.</p>
     <br />
     <video autoPlay loop muted playsInline>
-      <source src="./assets/images/ProjectFiles.mp4" type="video/mp4" />
+      <source
+        src="./neo4j-browser/assets/images/ProjectFiles.mp4"
+        type="video/mp4"
+      />
     </video>
   </BuiltInGuideSidebarSlide>,
   <BuiltInGuideSidebarSlide key="s8">

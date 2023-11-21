@@ -57,7 +57,10 @@ const slides = [
       <li>Note that he is from Sweden.</li>
     </ol>
     <br />
-    <img src="./assets/images/one_node.png" className="img-responsive" />
+    <img
+      src="./neo4j-browser/assets/images/one_node.png"
+      className="img-responsive"
+    />
     <br />
     <p className="paragraph">
       <em>
@@ -87,7 +90,10 @@ const slides = [
       <li>{`Color the "Person" node red.`}</li>
     </ol>
     <br />
-    <img src="./assets/images/labeled_node.png" className="img-responsive" />
+    <img
+      src="./neo4j-browser/assets/images/labeled_node.png"
+      className="img-responsive"
+    />
     <br />
     <p className="paragraph">
       <em>
@@ -117,7 +123,10 @@ const slides = [
       <li>Allison, from the US, who surfs.</li>
     </ol>
     <br />
-    <img src="./assets/images/more_nodes.png" className="img-responsive" />
+    <img
+      src="./neo4j-browser/assets/images/more_nodes.png"
+      className="img-responsive"
+    />
     <br />
     <p className="paragraph">
       <em>
@@ -156,7 +165,10 @@ const slides = [
       <li>Rik and Ian know Allison.</li>
     </ol>
     <br />
-    <img src="./assets/images/relationships.png" className="img-responsive" />
+    <img
+      src="./neo4j-browser/assets/images/relationships.png"
+      className="img-responsive"
+    />
     <br />
     <p className="paragraph">
       <em>
@@ -187,7 +199,10 @@ const slides = [
       <li>Everyone else can have similar relationship properties.</li>
     </ul>
     <br />
-    <img src="./assets/images/rel-props.png" className="img-responsive" />
+    <img
+      src="./neo4j-browser/assets/images/rel-props.png"
+      className="img-responsive"
+    />
   </BuiltInGuideSidebarSlide>,
   <BuiltInGuideSidebarSlide key="seventh">
     <h3>Next steps</h3>

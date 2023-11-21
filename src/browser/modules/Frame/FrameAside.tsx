@@ -34,7 +34,9 @@ function FrameAside(props: any) {
     const isDarkTheme = theme.name === DARK_THEME
     title = (
       <img
-        src={`./assets/images/neo4j-logo${isDarkTheme ? '-inverted' : ''}.svg`}
+        src={`./neo4j-browser/assets/images/neo4j-logo${
+          isDarkTheme ? '-inverted' : ''
+        }.svg`}
         alt="Neo4j"
         className="frame-title-logo"
       />

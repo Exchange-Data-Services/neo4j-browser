@@ -96,7 +96,10 @@ const slides = [
     </div>
     <div className="col-sm-4">
       <video autoPlay loop muted playsInline>
-        <source src="./assets/images/Keystrokes.mp4" type="video/mp4" />
+        <source
+          src="./neo4j-browser/assets/images/Keystrokes.mp4"
+          type="video/mp4"
+        />
       </video>
     </div>
   </Slide>,
@@ -128,7 +131,10 @@ const slides = [
       </ul>
     </div>
     <div className="col-sm-4">
-      <img src="./assets/images/Stream.png" className="img-responsive" />
+      <img
+        src="./neo4j-browser/assets/images/Stream.png"
+        className="img-responsive"
+      />
     </div>
   </Slide>,
   <Slide key="s4">
@@ -145,7 +151,10 @@ const slides = [
     </div>
     <div className="col-sm-4">
       <video autoPlay loop muted playsInline>
-        <source src="./assets/images/ReusableFrame.mp4" type="video/mp4" />
+        <source
+          src="./neo4j-browser/assets/images/ReusableFrame.mp4"
+          type="video/mp4"
+        />
       </video>
     </div>
   </Slide>,
@@ -163,7 +172,7 @@ const slides = [
     </div>
     <div className="col-sm-4">
       <img
-        src="./assets/images/SidebarDB_Iinfo.png"
+        src="./neo4j-browser/assets/images/SidebarDB_Iinfo.png"
         className="img-responsive"
       />
     </div>
@@ -187,7 +196,10 @@ const slides = [
     </div>
     <div className="col-sm-4">
       <video autoPlay loop muted playsInline>
-        <source src="./assets/images/Favorites.mp4" type="video/mp4" />
+        <source
+          src="./neo4j-browser/assets/images/Favorites.mp4"
+          type="video/mp4"
+        />
       </video>
     </div>
   </Slide>,
@@ -203,7 +215,10 @@ const slides = [
     </div>
     <div className="col-sm-4">
       <video autoPlay loop muted playsInline>
-        <source src="./assets/images/ProjectFiles.mp4" type="video/mp4" />
+        <source
+          src="./neo4j-browser/assets/images/ProjectFiles.mp4"
+          type="video/mp4"
+        />
       </video>
     </div>
   </Slide>,

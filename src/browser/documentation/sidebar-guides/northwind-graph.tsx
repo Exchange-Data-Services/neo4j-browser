@@ -63,7 +63,7 @@ const slides = [
       Let's start by loading the product catalog tables.`}
     </p>
     <img
-      src="./assets/images/northwind/product-category-supplier.png"
+      src="./neo4j-browser/assets/images/northwind/product-category-supplier.png"
       className="img-responsive"
     />
     <p>
@@ -142,7 +142,7 @@ SET n = row`}
       graph.`}
     </p>
     <img
-      src="./assets/images/northwind/product-graph.png"
+      src="./neo4j-browser/assets/images/northwind/product-graph.png"
       className="img-responsive"
     />
     <pre className="pre-scrollable code runnable">
@@ -168,7 +168,7 @@ CREATE (s)-[:SUPPLIES]->(p)`}
     </p>
     <p>Lets try some queries using patterns.</p>
     <img
-      src="./assets/images/northwind/product-graph.png"
+      src="./neo4j-browser/assets/images/northwind/product-graph.png"
       className="img-responsive"
     />
     <hr />
@@ -201,7 +201,7 @@ RETURN DISTINCT s.companyName as ProduceSuppliers`}
     </p>
     <p>Northwind customers place orders, which may detail multiple products.</p>
     <img
-      src="./assets/images/northwind/customer-orders.png"
+      src="./neo4j-browser/assets/images/northwind/customer-orders.png"
       className="img-responsive"
     />
     <ul className="undecorated">
@@ -277,7 +277,7 @@ CREATE (n)-[:PURCHASED]->(o)`}
       relationship in the graph.
     </p>
     <img
-      src="./assets/images/northwind/order-graph.png"
+      src="./neo4j-browser/assets/images/northwind/order-graph.png"
       className="img-responsive"
     />
     <pre className="pre-scrollable code runnable">

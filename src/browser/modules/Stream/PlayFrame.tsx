@@ -63,7 +63,9 @@ const AuraPromotion = () => {
       </AuraPromoLink>
       for a free Neo4j cloud instance with
       <img
-        src={`./assets/images/aura-logo${isDarkTheme ? '-inverted' : ''}.svg`}
+        src={`./neo4j-browser/assets/images/aura-logo${
+          isDarkTheme ? '-inverted' : ''
+        }.svg`}
         alt="Neo4j"
         style={{ marginLeft: '5px', width: '100%', maxWidth: '140px' }}
       />

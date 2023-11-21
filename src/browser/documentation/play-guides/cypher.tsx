@@ -235,7 +235,7 @@ RETURN DISTINCT surfer`}
     </div>
     <div className="col-sm-4">
       <img
-        src="./assets/images/screen_cypher_warn.png"
+        src="./neo4j-browser/assets/images/screen_cypher_warn.png"
         className="img-responsive"
       />
     </div>
